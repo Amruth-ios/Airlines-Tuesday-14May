@@ -2,7 +2,7 @@
 //  AirlineViewModel.swift
 //  Airlines
 //
-//  Created by Sai Voruganti on 5/13/25.
+//  Created by Amruth Kallyam on 5/13/25.
 //
 
 import Foundation
