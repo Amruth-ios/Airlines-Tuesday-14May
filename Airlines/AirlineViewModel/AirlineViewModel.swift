@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Network
 
 class AirlineViewModel {
     var  networkManager: Servicable?
@@ -15,7 +16,7 @@ class AirlineViewModel {
     func search(text: String) {
         Task {
             do {
-                if let searchResponse = try await networkManager?.excute(request: SearchRequest.createRequest(text: text), modelName: SearchResponse.self) {
+                if let searchResponse = try await networkManager?.excute(request: SearchRequest.createRequest(text: text) as! Request, modelName: SearchResponse.self) {
                     self.results = searchResponse.results
                     self.relatedTopics = searchResponse.relatedTopics
                     onUpdate?()

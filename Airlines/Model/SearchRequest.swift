@@ -2,10 +2,11 @@
 //  SearchRequest.swift
 //  Airlines
 //
-//  Created by Sai Voruganti on 5/6/25.
+//  Created by Amruth Kallyam on 5/6/25.
 //
 
 import Foundation
+import Network
 
 
 struct SearchRequest: Request {

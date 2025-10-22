@@ -1,0 +1,15 @@
+{
+  "originHash" : "806178f340402651b0ecd9683afa44507508818ab4903ce00f5920f95b5e4732",
+  "pins" : [
+    {
+      "identity" : "network",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Amruth-ios/Network.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "658ca05dbbe863dda02ba060a66d4067e34543b8"
+      }
+    }
+  ],
+  "version" : 3
+}

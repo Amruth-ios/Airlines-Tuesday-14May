@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		242E537E2DF22AEC0021C506 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 242E537D2DF22AEC0021C506 /* Network */; };
+		242E53812DF282AF0021C506 /* Network in Frameworks */ = {isa = PBXBuildFile; productRef = 242E53802DF282AF0021C506 /* Network */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		37A0D45B2DC531F400E9ACB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				242E537E2DF22AEC0021C506 /* Network in Frameworks */,
+				242E53812DF282AF0021C506 /* Network in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,12 +92,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		242E537C2DF22AEC0021C506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		37A0D43B2DC531F100E9ACB9 = {
 			isa = PBXGroup;
 			children = (
 				37A0D4462DC531F100E9ACB9 /* Airlines */,
 				37A0D45D2DC531F400E9ACB9 /* AirlinesTests */,
 				37A0D4672DC531F400E9ACB9 /* AirlinesUITests */,
+				242E537C2DF22AEC0021C506 /* Frameworks */,
 				37A0D4452DC531F100E9ACB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,6 +140,8 @@
 			);
 			name = Airlines;
 			packageProductDependencies = (
+				242E537D2DF22AEC0021C506 /* Network */,
+				242E53802DF282AF0021C506 /* Network */,
 			);
 			productName = Airlines;
 			productReference = 37A0D4442DC531F100E9ACB9 /* Airlines.app */;
@@ -208,6 +225,9 @@
 			);
 			mainGroup = 37A0D43B2DC531F100E9ACB9;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				242E537F2DF282AF0021C506 /* XCRemoteSwiftPackageReference "Network" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 37A0D4452DC531F100E9ACB9 /* Products */;
 			projectDirPath = "";
@@ -294,6 +314,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -321,6 +342,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -388,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -445,7 +467,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -563,6 +585,29 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		242E537F2DF282AF0021C506 /* XCRemoteSwiftPackageReference "Network" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Amruth-ios/Network.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		242E537D2DF22AEC0021C506 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Network;
+		};
+		242E53802DF282AF0021C506 /* Network */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 242E537F2DF282AF0021C506 /* XCRemoteSwiftPackageReference "Network" */;
+			productName = Network;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 37A0D43C2DC531F100E9ACB9 /* Project object */;
 }
